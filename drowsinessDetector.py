@@ -13,7 +13,7 @@ def calculate_EAR(eye):
 cap = cv2.VideoCapture(0)
 hog_face_detector = dlib.get_frontal_face_detector()
 dlib_facelandmark = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
-
+#comparing EAR with threshold
 while True:
     _, frame = cap.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
